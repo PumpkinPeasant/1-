@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="keywords" content="угадай, песня, мелодия, guess, song, исполнитель">
+		<meta name="description" content="Играть с друзьями. Угадай песню за 10 секунд.">
+		<title>Угадай песню</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<link href="img/favicon.ico" type="image/x-icon" rel="shortcut icon">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script type="text/javascript" src="js/script.js"> </script>
+		<script type="text/javascript" src="js/nickname.js"> </script>
+	</head>
+	<body id="body" onload="randombg()" onload="login()" >
+		<div id="wrapper" onresize="resize()">
+			<div class="content">
+				<header class="header">
+					<div id="songimage"></div>
+							<div class="songinfo">
+								<div class="artist">
+									<p>Исполнитель</p>
+								</div>
+								<div class="songname">
+									<p>Название песни</p>
+								</div>
+								<div class="links">
+									<div class="shazam" >
+									</div>
+									<div class="vk" href></div>
+									<div class="itunes"></div>
+									<div class="itunes2"></div>
+								</div>
+								
+							</div>
+							<div class="timer">
+									<p>00:05</p>
+								</div>
+				</header>
+				<div class="main-content">
+					<div class="playersbar">
+						<div class="profilepicture" id="pic1"></div>
+							<p class="usernick">Игрок 1</p>
+							<p class="points">5 pt.</p>
+						<div class="ready" id="p1"></div>
+							<div class="profilepicture" id="pic2"></div>
+							<p class="usernick">Игрок 1</p>
+							<p class="points">5 pt.</p>
+						<div class="ready"></div>
+							<div class="profilepicture" id="pic3"></div>
+							<p class="usernick">Игрок 1</p>
+							<p class="points">5 pt.</p>
+						<div class="ready"></div>
+					</div>
+					<div class="chatarea">
+						<div class="chatoutput">
+							<textarea readonly>
+  							
+							</textarea>
+						</div>
+					<div class="chatinput">
+						<input type="text" id="message" size="40">
+						<input type="submit" id="messagebutton" value="Отправить">
+					</div>
+				</div>
+					
+				</div>
+			</div>
+		</div>  
+	</body>
+</html>
